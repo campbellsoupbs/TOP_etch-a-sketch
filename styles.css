@@ -21,4 +21,9 @@
 
 .newdiv {
     background-color: aquamarine;
+    transition: 0.2s;
+}
+
+.newerclass {
+    background-color: red;
 }
