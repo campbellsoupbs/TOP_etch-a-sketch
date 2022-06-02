@@ -14,6 +14,7 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 40px;
     background-color: rgb(242, 86, 86);
     border-radius: 10;
     height: 700px;
