@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(241, 186, 180);
+    background-color: rgb(95, 183, 242);
 }
 
 .title {
@@ -8,15 +8,20 @@ body {
     align-items: center;
 }
 
-.description {
-    font-size: 10px;
-}
-
 .sketch {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(242, 86, 86);
+    border-radius: 10;
+    height: 700px;
+    width: 800px;
 }
+
+.description {
+    font-size: 10px;
+}
+
 
 .container {
     display: flex;
