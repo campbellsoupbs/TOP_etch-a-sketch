@@ -1,9 +1,17 @@
+body {
+    background-color: rgb(241, 186, 180);
+}
 
 .title {
     display:flex;
     flex-direction: column;
     align-items: center;
 }
+
+.description {
+    font-size: 10px;
+}
+
 .sketch {
     display: flex;
     flex-direction: column;

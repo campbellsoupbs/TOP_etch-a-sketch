@@ -1,17 +1,15 @@
-//variables 
-let height = 50;
-let width = 50;
-
 //selectors
 let container = document.querySelector('.container');
+let form = document.querySelector('.form');
 
 
 //listeners
+form.addEventListener('submit', dimensions);
 
 
 //functions
 
-function createGrid() {
+function createGrid(height, width) {
     for (let i=0; i<(height*width); i++) {
         let newdiv = document.createElement('div');
         
@@ -31,4 +29,19 @@ function colorBox(e) {
     console.log(e.target.classList[1]);
 }
 
-createGrid();
+function dimensions(e) {
+    removeBoxes();
+    
+    e.preventDefault();
+    let height = document.querySelector('.text-height').value;
+    let width = document.querySelector('.text-width').value;
+
+    console.log(height);
+    console.log(width);
+
+    createGrid(height, width);
+}
+
+function removeBoxes() {
+    container.innerHTML = '';
+}
